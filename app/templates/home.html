@@ -5,7 +5,41 @@
 
 {% block content %}
 
-<body style="background:linear-gradient(to right, rgb(255, 255, 255) 50%, rgb(0, 102, 255) 50%);border-style: solid; border-color: rgb(80, 235, 255);">
-<h5 style="text-align: center;">KATIE BAYLISS</h5>
+<body style="background:linear-gradient(to right, rgb(255, 255, 255) 50%, rgb(0, 153, 255) 50%); 
+border-style: solid; border-color: rgb(80, 235, 255);">
+<div style="background:linear-gradient(to right, rgb(255, 255, 255) 50%, rgb(0, 153, 255) 50%);">
+    <body style="background:linear-gradient(to right, rgb(255, 255, 255) 50%, rgb(0, 153, 255) 50%);"></body>
+        <div style="background:linear-gradient(to right, rgb(255, 255, 255) 50%, rgb(0, 153, 255) 50%);">
+            <div style="float: left; width: 49% ;  display: flex;justify-content: center;">
+                <div style="width: 100%; position: absolute;">
+                    <h5 style="text-align: center; font-size: 45px;">Katie</h5>
+                </div>
+                <div style="position: absolute; width: 100%; margin-top: 60px;">
+                    <h4 style="text-align: center; font-size: 40px;">Sun</h4>
+                </div>
+                <a href="/gallery_vector" style="text-align: center;">
+                    <img style =" width : 50%; margin-top: 110px;"src="{{ url_for('static',filename='img/front2.jpg')}}"></img>
+                </a>
+            </div>
+            <div style="float: left; width: 2% ;  display: flex;justify-content: center;">
+                <div style="position: absolute; width: 100%; margin-top: 60px;">
+                    <h4 style="text-align: center; font-size: 40px;">&</h4>
+                </div>
+            </div>
+            <div style="float: right; width: 49%;  display: flex;justify-content: center;">
+                <div style="width: 100%; position: absolute;">
+                    <h5 style="text-align: center; font-size: 45px;">bayliss</h5>
+                </div>
+                <div style="position: absolute; width: 100%; margin-top: 60px;">
+                    <h4 style="text-align: center; font-size: 40px;">Sketches</h4>
+                </div>
+                <a href="/gallery_concept" style="text-align: center;">
+                    <img style =" width : 50%; margin-top: 110px;"src="{{ url_for('static',filename='img/front1.jpg')}}"></img>
+                </a>
+            </div>
+        </div>
+</div>
+
 </body>
+
 {% endblock %}
