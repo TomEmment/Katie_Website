@@ -5,11 +5,10 @@
 
 {% block content %}
 
-<body style="background:linear-gradient(to right, rgb(255, 255, 255) 50%, rgb(0, 153, 255) 50%); 
-border-style: solid; border-color: rgb(80, 235, 255);">
-<div style="background:linear-gradient(to right, rgb(255, 255, 255) 50%, rgb(0, 153, 255) 50%);">
-    <body style="background:linear-gradient(to right, rgb(255, 255, 255) 50%, rgb(0, 153, 255) 50%);"></body>
-        <div style="background:linear-gradient(to right, rgb(255, 255, 255) 50%, rgb(0, 153, 255) 50%);">
+<body style="background:linear-gradient(100deg, rgb(255, 255, 255) 50%, rgb(0, 153, 255) 50%);">
+<div style="background:linear-gradient(100deg, rgb(255, 255, 255) 50%, rgb(0, 153, 255) 50%);">
+    <body style="background:linear-gradient(100deg, rgb(255, 255, 255) 50%, rgb(0, 153, 255) 50%);"></body>
+        <div style="background:linear-gradient(100deg, rgb(255, 255, 255) 50%, rgb(0, 153, 255) 50%);">
             <div style="float: left; width: 49% ;  display: flex;justify-content: center;">
                 <div style="width: 100%; position: absolute;">
                     <h5 style="text-align: center; font-size: 45px;">Katie</h5>
@@ -18,7 +17,8 @@ border-style: solid; border-color: rgb(80, 235, 255);">
                     <h4 style="text-align: center; font-size: 40px;">Sun</h4>
                 </div>
                 <a href="/gallery_vector" style="text-align: center;">
-                    <img style =" width : 50%; margin-top: 110px;"src="{{ url_for('static',filename='img/front2.jpg')}}"></img>
+                    <img style ="z-index: 1; position: absolute;width: 70%; left: -12%; top: -30%" src="{{ url_for('static',filename='img/background1.png')}}"></img>
+                    <img style ="z-index: 2; position: relative; width : 50%; margin-top: 150px;"src="{{ url_for('static',filename='img/front2.jpg')}}"></img>
                 </a>
             </div>
             <div style="float: left; width: 2% ;  display: flex;justify-content: center;">
@@ -34,7 +34,8 @@ border-style: solid; border-color: rgb(80, 235, 255);">
                     <h4 style="text-align: center; font-size: 40px;">Sketches</h4>
                 </div>
                 <a href="/gallery_concept" style="text-align: center;">
-                    <img style =" width : 50%; margin-top: 110px;"src="{{ url_for('static',filename='img/front1.jpg')}}"></img>
+                    <img style ="float: right; z-index: 1; position: absolute;width: 70%; right: -8%; top: -25%" src="{{ url_for('static',filename='img/background2.png')}}"></img>
+                    <img style ="z-index: 2; position: relative; width : 50%; margin-top: 150px;"src="{{ url_for('static',filename='img/front1.jpg')}}"></img>
                 </a>
             </div>
         </div>
