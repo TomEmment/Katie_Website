@@ -4,13 +4,13 @@
 
 
 {% block content %}
-<body style="background:rgb(0, 153, 255) 50%;">
-    <div style="background:rgb(0, 153, 255) 50%;">
-        <div style="position: absolute; width: 100%; margin-top: 60px;">
-            <h4 style="text-align: center; font-size: 40px;">Concept Gallery</h4>
+<body style="background:rgb(38, 179, 202) 50%;">
+    <div style="background:rgb(38, 179, 202) 50%;">
+        <div style="text-align: center; position: absolute; width: 100%; margin-top: 60px;">
+            <img style =" width : 50%; "src="{{ url_for('static',filename='img/gallery1title.png')}}"></img>
         </div>
         <div style="float: left; width: 50% ;  display: block;justify-content: center;">
-            <div style="display: flex; float: left; justify-content: center; margin-top: 50px;">
+            <div style="display: flex; float: left; justify-content: center; margin-top: 450px;">
                 <img style =" width : 50%; "src="{{ url_for('static',filename='img/gallery.jpg')}}"></img>
             </div>
             <div style="display: flex; float: left; justify-content: center; margin-top: 50px;">
@@ -21,7 +21,7 @@
             </div>
         </div>
         <div style="float: right; width: 50% ;  display: block;justify-content: center;">
-            <div style="display: flex; float: left; justify-content: center; margin-top: 50px;">
+            <div style="display: flex; float: left; justify-content: center; margin-top: 450px;">
                 <img style =" width : 50%; "src="{{ url_for('static',filename='img/gallery2.jpg')}}"></img>
             </div>
             <div style="display: flex; float: left; justify-content: center; margin-top: 50px;">
@@ -30,4 +30,5 @@
         </div>
     </div>
 </body>
+<script src="{{ url_for('static', filename = 'js/gallery.js')}}"></script>
 {% endblock %}

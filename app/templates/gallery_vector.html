@@ -5,12 +5,20 @@
 {% block content %}
 <body >
     <div >
-        <div style="position: absolute; width: 100%; margin-top: 60px;">
-            <h4 style="text-align: center; font-size: 40px;">Vector Gallery</h4>
+        <div style="text-align: center; position: absolute; width: 100%; margin-top: 60px;">
+            <img style =" width : 50%; "src="{{ url_for('static',filename='img/gallery2title.png')}}"></img>
         </div>
         <div style="float: left; width: 50% ;  display: block;justify-content: center;">
+            <div style="display: flex; float: left; justify-content: center; margin-top: 450px;">
+                <button style="all: unset; text-align: center;" data-toggle="modal" data-target="#myModal" onclick="loadImage()">
+                    <img style =" width : 50%; "src="{{ url_for('static',filename='img/gallery_secondary9.jpg')}}"></img>
+                </button>
+            </div>
             <div style="display: flex; float: left; justify-content: center; margin-top: 50px;">
                 <img style =" width : 50%; "src="{{ url_for('static',filename='img/gallery_secondary1.jpg')}}"></img>
+            </div>
+            <div style="display: flex; float: left; justify-content: center; margin-top: 50px;">
+                <img style =" width : 50%; "src="{{ url_for('static',filename='img/gallery_secondary7.jpg')}}"></img>
             </div>
             <div style="display: flex; float: left; justify-content: center; margin-top: 50px;">
                 <img style =" width : 50%; "src="{{ url_for('static',filename='img/gallery_secondary3.jpg')}}"></img>
@@ -18,15 +26,9 @@
             <div style="display: flex; float: left; justify-content: center; margin-top: 50px;">
                 <img style =" width : 50%; "src="{{ url_for('static',filename='img/gallery_secondary5.jpg')}}"></img>
             </div>
-            <div style="display: flex; float: left; justify-content: center; margin-top: 50px;">
-                <img style =" width : 50%; "src="{{ url_for('static',filename='img/gallery_secondary7.jpg')}}"></img>
-            </div>
-            <div style="display: flex; float: left; justify-content: center; margin-top: 50px;">
-                <img style =" width : 50%; "src="{{ url_for('static',filename='img/gallery_secondary9.jpg')}}"></img>
-            </div>
         </div>
         <div style="float: right; width: 50% ;  display: block;justify-content: center;">
-            <div style="display: flex; float: left; justify-content: center; margin-top: 50px;">
+            <div style="display: flex; float: left; justify-content: center; margin-top: 450px;">
                 <img style =" width : 50%; "src="{{ url_for('static',filename='img/gallery_secondary2.jpg')}}"></img>
             </div>
             <div style="display: flex; float: left; justify-content: center; margin-top: 50px;">
@@ -42,6 +44,24 @@
                 <img style =" width : 50%; "src="{{ url_for('static',filename='img/gallery_secondary10.jpg')}}"></img>
             </div>
         </div>
+        <div class="container">
+            <div class="modal fade" id="myModal" role="dialog">
+              <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                  </div>
+                  <div id= "modalContent" class="modal-body">
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
     </div>
 </body>
+<script src="{{ url_for('static', filename = 'js/gallery.js')}}"></script>
+
 {% endblock %}
