@@ -4,6 +4,34 @@
 
 {% block content %}
 <body>
-<p>This is the about page</p>
+    <div style="float: left; width: 50% ;  justify-content: center; margin-top: 100px;">
+        <div style="width: 100%; justify-content: center;">
+            <h1 style="text-align: center; font-family: Audiowide, sans-serif;">Hi im Katie!</h1>
+        </div>
+        <div style="width: 100%; justify-content: center; margin-top: 50px;">
+            <p style="width: 100%;text-align: center; font-family: Audiowide, sans-serif;">Katie is an illustrator and concept artist who 
+                draws her inspiration <br> from her love of 80s media and copious amounts of tea. <br>
+                From bright, colourful, graphic images to darker,  <br>more sinister sci-fi horror; narrative flows through the heart of every piece, <br>
+                drawing viewers from one story to the next</p>
+        </div>
+        <div style=" width: 10%; text-align: center; margin: auto;">
+
+            <a href="https://www.instagram.com/" style="text-align: center;">
+                <img src="{{ url_for('static',filename='img/Instagram.png')}}" width="25" height="25"></img>
+            </a>
+            <a href="https://www.linkedin.com/" style="text-align: center;">
+                <img src="{{ url_for('static',filename='img/linkedin.jpeg')}}" width="25" height="25"></img>
+            </a>
+        </div>
+        <div style="width: 100%; justify-content: center; margin-top: 100px;">
+            <h3 style="text-align: center; font-family: Audiowide, sans-serif;">Lets get in contact</h3>
+        </div>
+        <div style="width: 100%; justify-content: center; margin-top: 20px;">
+            <p style="width: 100%;text-align: center; font-family: Audiowide, sans-serif;">Email: Me@Me.com</p>
+        </div>
+    </div>
+    <div style="float: right; width: 50%;  justify-content: center; margin-top: 100px;">
+        <img style ="z-index: 2; position: relative; width : 60%; margin-top: 50px; text-align: center;"src="{{ url_for('static',filename='img/katie.jpg')}}"></img>
+    </div>
 </body>
 {% endblock %}
