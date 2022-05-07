@@ -3,12 +3,16 @@ function loadImage(){
 
     var img = OpenSeadragon({
         id: 'modalContent',
+        defaultZoomLevel: 1,
+        minZoomLevel: 0.7,
+        prefixUrl: "../static/js/images/",
         titleSources:{
             type: 'image',
-            prefixUrl: '../static/js/images/',
-            url: 'static/img/gallery_secondary9.jpg',
+            url: '../static/img/gallery_secondary9.jpg',
             Format: 'jpg',
             buildPyramid: false,
         },
     })
+
+
 }
