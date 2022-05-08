@@ -50,3 +50,15 @@ body {
   font-family: 'Manjari', sans-serif;
 }
 
+.nav{
+
+  list-style:none;
+  text-align:center;
+}
+.nav li{
+  display:inline;
+}
+.nav a{
+  display:inline-block;
+  padding:10px;
+}
