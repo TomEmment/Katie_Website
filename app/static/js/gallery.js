@@ -1,18 +1,17 @@
+const imgBtn = document.querySelector('.img-btn')
+imgBtn.addEventListener('click', loadImage)
 
-function loadImage(){
-
+function loadImage(e){
     var img = OpenSeadragon({
         id: 'modalContent',
         defaultZoomLevel: 1,
         minZoomLevel: 0.7,
         prefixUrl: "../static/js/images/",
-        titleSources:{
+        tileSources:{
             type: 'image',
-            url: '../static/img/gallery_secondary9.jpg',
+            url: e.target.src,
             Format: 'jpg',
             buildPyramid: false,
         },
     })
-
-
 }
